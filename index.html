@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneha Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+    <div class="logo">Sneha.</div>
+
+    <ul>
+        
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+        
+        
+    </ul>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hello, I'm <span>Sneha Pol</span></h1>
+<h3>Web & Android Development Intern</h3>
+
+<p>
+Currently gaining hands-on experience in Web and Android Development.
+Passionate about building responsive websites, mobile applications,
+and learning modern technologies through real-world projects.
+</p>
+
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+</div>
+
+<div class="hero-image">
+
+<img src="my_image.jpg.jpeg" alt="Sneha Pol"> 
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About Me</h2>
+
+<div class="glass-card">
+
+<p>
+    I am Sneha Pol, a passionate Web Developer and Android Development Enthusiast.
+Currently pursuing internship experience in Web and Android Development,
+where I am building practical projects and improving my technical skills.
+
+My projects include Online Vehicle Parking Management System,
+Shritej Electronic Shop Management System, and Online Apartment Visitor
+Management System. I enjoy developing responsive websites and mobile
+applications using modern technologies.
+
+</p>
+
+
+</div>
+
+</section>
+
+<section id="skills" class="skills">
+
+<h2>My Skills</h2>
+
+<div class="skill-box">
+    
+
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>Bootstrap</span>
+<span>PHP</span>
+<span>MySQL</span>
+<span>Git & GitHub</span>
+<span>Responsive Design</span>
+
+<span>Android Studio</span>
+<span>Java</span>
+<span>XML</span>
+<span>Firebase</span>
+
+
+</div>
+
+</section>
+
+
+
+    <!-- Project 2 -->
+    <section id="projects" class="projects">
+
+<h2>My Projects</h2>
+
+<div class="project-grid">
+
+    <div class="project-card">
+        <i class="fa-solid fa-square-parking"></i>
+        <h3>Online Vehicle Parking Management System</h3>
+        <p>
+            A web-based system that allows users to manage vehicle parking,
+            check parking availability, allocate slots, and maintain parking records efficiently.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <i class="fa-solid fa-shop"></i>
+        <h3>Shritej Electronic Shop Management System</h3>
+        <p>
+            An electronic shop management application used for managing products,
+            inventory, customer records, sales, billing, and stock updates.
+        </p>
+    </div>
+
+    <div class="project-card">
+        <i class="fa-solid fa-building"></i>
+        <h3>Online Apartment Visitor Management System</h3>
+        <p>
+            A smart visitor management solution for apartments that handles
+            visitor entry, approvals, security tracking, and resident notifications.
+        </p>
+    </div>
+
+    <div class="project-card">
+    <i class="fa-brands fa-android"></i>
+    <h3>Android Mobile Application</h3>
+    <p>
+        Mobile application developed using Android Studio,
+        Java, XML and Firebase with user-friendly interface.
+    </p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+       <input type="text" id="name" placeholder="Your Name" required>
+
+<input type="email" id="email" placeholder="Your Email" required>
+
+<textarea id="message" rows="5" placeholder="Message"></textarea>
+       
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let message = document.getElementById("message").value;
+
+localStorage.setItem("name", name);
+localStorage.setItem("email", email);
+localStorage.setItem("message", message);
+
+alert("Message Saved Successfully!");
+ // Form Clear
+    document.getElementById("contactForm").reset();
+
+});
+</script>
+
+<footer>
+
+    <h3>Sneha Pol Portfolio</h3>
+
+    <div class="social">
+
+        <a href="#"><i class="fab fa-github"></i></a>
+
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+    </div>
+
+    <p>© 2026 Sneha Pol | All Rights Reserved</p>
+
+</footer>
+
+
+</body>
+</html>
