@@ -33,6 +33,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </ul>
 </nav>
 </header>
+<main>
 
 <section class="hero">
 
@@ -55,7 +56,8 @@ View Projects
 
 <div class="hero-image">
 
-<img src="my_image.jpg.jpeg" alt="Sneha Pol"> 
+<img src="my_image.jpg.jpeg" 
+alt="Sneha Pol"> 
 
 </div>
 
@@ -172,11 +174,14 @@ applications using modern technologies.
 <textarea id="message" rows="5" placeholder="Message"></textarea>
        
 
-        <button type="submit">Send Message</button>
+    <button aria-label="Send Message">
+Send
+</button>   
 
     </form>
 
 </section>
+</main>
 
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(e){
@@ -201,16 +206,22 @@ alert("Message Saved Successfully!");
 <footer>
 
     <h3>Sneha Pol Portfolio</h3>
+<div class="social">
 
-    <div class="social">
+    <a href="https://github.com/snehapol100"
+       aria-label="GitHub Profile"
+       target="_blank">
+       <i class="fab fa-github"></i>
+    </a>
 
-        <a href="#"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/your-linkedin-id"
+       aria-label="LinkedIn Profile"
+       target="_blank">
+       <i class="fab fa-linkedin"></i>
+    </a>
 
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-
-        <a href="#"><i class="fab fa-instagram"></i></a>
-
-    </div>
+   
+</div>
 
     <p>© 2026 Sneha Pol | All Rights Reserved</p>
 
